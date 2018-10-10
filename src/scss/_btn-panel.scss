@@ -1,0 +1,34 @@
+
+.btn-panel {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    margin: .2rem 0;
+
+    .btn-status {
+        flex-grow: 1;
+        font-size: 1em;
+        background-color: $secondary-color;
+        outline: none;
+        border: 0;
+        color: #fff;
+        margin-right: .1rem;
+        cursor: pointer;
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: #fff;
+            color: $secondary-color;
+            border-bottom: 2px solid $secondary-color;
+        }
+    }
+
+    .active {
+        background-color: #fff;
+        color: $secondary-color;
+        border-bottom: 2px solid $secondary-color;
+    }
+}

@@ -1,0 +1,45 @@
+.adduser-reload {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    border-bottom: .2rem solid $primary-color;
+
+    .username {
+        height: 3.5rem;
+        width: 20rem;
+        font-size: 1.3em;
+        padding: 1.5rem 1.5rem 1.5rem 1rem;
+        outline: none;
+        border-radius: 10px;
+        border: 2px solid $primary-color;
+        color: $secondary-color;
+        margin-left: 2rem;
+        margin-right: auto;
+    }
+
+    .btn-reload {
+        height: 3.5rem;
+        width: 20rem;
+        margin-right: 2rem;
+        border: 0;
+        outline: none;
+    }
+
+    .reload-icon {
+        color: $secondary-color;
+    }
+
+    .reload-icon-active {
+        animation-name: spin;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        color: $primary-color;
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    }
+}

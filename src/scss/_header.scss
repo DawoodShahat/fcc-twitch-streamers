@@ -1,0 +1,8 @@
+.header {
+    @include centerXY;
+    height: 100px;
+    background: $primary-color;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    font-size: 1.7em;
+}
